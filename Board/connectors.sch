@@ -144,4 +144,48 @@ $EndComp
 Connection ~ 2950 2600
 Wire Wire Line
 	2950 2600 3200 2600
+$Comp
+L Connector:Barrel_Jack_Switch J4
+U 1 1 5C4B0375
+P 9400 2350
+F 0 "J4" H 9455 2667 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 9455 2576 50  0000 C CNN
+F 2 "Connectors_custom:BarrelJack_712RA" H 9450 2310 50  0001 C CNN
+F 3 "~" H 9450 2310 50  0001 C CNN
+	1    9400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2250 10100 2250
+Wire Wire Line
+	10100 2250 10100 2100
+$Comp
+L power:+12V #PWR06
+U 1 1 5C4B04CF
+P 10100 2100
+F 0 "#PWR06" H 10100 1950 50  0001 C CNN
+F 1 "+12V" H 10115 2273 50  0000 C CNN
+F 2 "" H 10100 2100 50  0001 C CNN
+F 3 "" H 10100 2100 50  0001 C CNN
+	1    10100 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2450 10100 2450
+Wire Wire Line
+	10100 2450 10100 2600
+NoConn ~ 9700 2350
+$Comp
+L power:GND #PWR07
+U 1 1 5C4B0703
+P 10100 2600
+F 0 "#PWR07" H 10100 2350 50  0001 C CNN
+F 1 "GND" H 10105 2427 50  0000 C CNN
+F 2 "" H 10100 2600 50  0001 C CNN
+F 3 "" H 10100 2600 50  0001 C CNN
+	1    10100 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 8850 1600 0    118  ~ 24
+Barrel Jack 12V
 $EndSCHEMATC
