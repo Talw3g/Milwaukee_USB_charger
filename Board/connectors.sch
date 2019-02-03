@@ -102,8 +102,7 @@ F 3 "" H 6750 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 2800 6750 2950
-NoConn ~ 6650 2800
+	6750 2800 6750 2850
 NoConn ~ 7350 2550
 NoConn ~ 7350 2450
 NoConn ~ 7350 2350
@@ -152,6 +151,8 @@ F 0 "J4" H 9455 2667 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 9455 2576 50  0000 C CNN
 F 2 "Connectors_custom:BarrelJack_712RA" H 9450 2310 50  0001 C CNN
 F 3 "~" H 9450 2310 50  0001 C CNN
+F 4 "1608755" H 9400 2350 50  0001 C CNN "Farnell"
+F 5 "712RA" H 9400 2350 50  0001 C CNN "Ref"
 	1    9400 2350
 	1    0    0    -1  
 $EndComp
@@ -188,4 +189,68 @@ F 3 "" H 10100 2600 50  0001 C CNN
 $EndComp
 Text Notes 8850 1600 0    118  ~ 24
 Barrel Jack 12V
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5C55F291
+P 2550 3800
+F 0 "H1" H 2450 3750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 2550 4250 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2550 3800 50  0001 C CNN
+F 3 "~" H 2550 3800 50  0001 C CNN
+	1    2550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3900 2550 4000
+Wire Wire Line
+	2550 4000 2800 4000
+Wire Wire Line
+	2800 3900 2800 4000
+Connection ~ 2800 4000
+Wire Wire Line
+	3050 3900 3050 4000
+$Comp
+L power:GND #PWR08
+U 1 1 5C56099E
+P 2800 4100
+F 0 "#PWR08" H 2800 3850 50  0001 C CNN
+F 1 "GND" H 2805 3927 50  0000 C CNN
+F 2 "" H 2800 4100 50  0001 C CNN
+F 3 "" H 2800 4100 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5C5609F4
+P 2800 3800
+F 0 "H2" H 2700 3750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 2800 4250 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2800 3800 50  0001 C CNN
+F 3 "~" H 2800 3800 50  0001 C CNN
+	1    2800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5C560A1A
+P 3050 3800
+F 0 "H3" H 2950 3750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 3050 4250 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3050 3800 50  0001 C CNN
+F 3 "~" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2800 6650 2850
+Wire Wire Line
+	6650 2850 6750 2850
+Connection ~ 6750 2850
+Wire Wire Line
+	6750 2850 6750 2950
+Wire Wire Line
+	2800 4000 3050 4000
+Wire Wire Line
+	2800 4000 2800 4100
 $EndSCHEMATC
