@@ -220,28 +220,6 @@ F 3 "" H 2800 4100 50  0001 C CNN
 	1    2800 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5C5609F4
-P 2800 3800
-F 0 "H2" H 2700 3750 50  0000 C CNN
-F 1 "MountingHole_Pad" V 2800 4250 50  0000 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2800 3800 50  0001 C CNN
-F 3 "~" H 2800 3800 50  0001 C CNN
-	1    2800 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5C560A1A
-P 3050 3800
-F 0 "H3" H 2950 3750 50  0000 C CNN
-F 1 "MountingHole_Pad" V 3050 4250 50  0000 C CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3050 3800 50  0001 C CNN
-F 3 "~" H 3050 3800 50  0001 C CNN
-	1    3050 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6650 2800 6650 2850
 Wire Wire Line
@@ -253,4 +231,26 @@ Wire Wire Line
 	2800 4000 3050 4000
 Wire Wire Line
 	2800 4000 2800 4100
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5C560A1A
+P 3050 3800
+F 0 "H3" H 2950 3750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 3050 4250 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3050 3800 50  0001 C CNN
+F 3 "~" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5C5609F4
+P 2800 3800
+F 0 "H2" H 2700 3750 50  0000 C CNN
+F 1 "MountingHole_Pad" V 2800 4250 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2800 3800 50  0001 C CNN
+F 3 "~" H 2800 3800 50  0001 C CNN
+	1    2800 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
